@@ -12,6 +12,19 @@ body{
     font-family: "Roboto",sans-serif;
 
 }
+button{
+    padding:10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity:0.8;
+    transition: 0.2s ease-in-out;
+}
+.explore_btn{
+    background: #ffc066;
+    align-self: flex-start;
+}
 /*Navigation*/
 nav{
  
@@ -34,4 +47,56 @@ nav{
 }
 .bar_icon{
     font-size: 24px;
+}
+/*hero section*/
+.hero{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tag{
+    color: white;
+    padding: 5px 10px;
+    align-self: flex-start;
+    background-color:#149f39;
+}
+.hero_content h1{
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 400px;
+}
+.explore_btn{
+    background-color:#ffc066;
+    align-self: flex-start;
+}
+@media(max-width: 786px){
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero_image{
+        display:flex;
+        justify-content: center;
+    }
+   
+    .hero_image img{
+        width:80%;
+        margin:0 auto;
+    }
+   
+    .hero_content{
+        gap: 10px;
+        padding: 10px;
+    }
+    .hero_content h1{
+        font-size: 32px;
+
+    }
+    
 }
